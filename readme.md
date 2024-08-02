@@ -6,6 +6,6 @@ the script is using the [ffmpeg](https://ffmpeg.org/) tool hence for it to work 
 
 # Get Started
 ## Clone the repository first
-    git clone
+    git clone https://github.com/Sohila-Hashem/GIF-to-WebM-Convertor
 ## Run the code
     python convert.py -s sourceDirectory -o outputDirectory
