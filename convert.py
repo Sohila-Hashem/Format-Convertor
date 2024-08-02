@@ -14,9 +14,9 @@ def main():
         os.makedirs(output_path, exist_ok=True)
 
     for video in os.listdir(source_path):
-        if not (os.path.exists(f'./{output_folder}/{video.split(".")[0]}.webm') or os.path.exists(f'./{output_folder}/{video.split(".")[0]}.webp')):
+        if not (os.path.exists(f'{output_folder}/{video.split(".")[0]}.webm') or os.path.exists(f'{output_folder}/{video.split(".")[0]}.webp')):
             if video.endswith(".gif"):
-                subprocess.run(f'ffmpeg -i ./{source_folder}/{video} -c vp9 -b:v 0 -crf 41 ./{output_folder}/{video.split(".")[0]}.webm')
+                subprocess.run(f'ffmpeg -i {source_folder}/{video} -c vp9 -b:v 0 -crf 41 {output_folder}/{video.split(".")[0]}.webm')
         else:
             print(f'{video} already exists in the targeted directory!')
 
