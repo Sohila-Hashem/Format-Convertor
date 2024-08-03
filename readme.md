@@ -1,5 +1,5 @@
 # About
-a handy python script that can be used to convert any .gif animated content to a .WebM format
+A handy python script that can be used to convert most popular image and video formats.
 
 # Instructions
 the script is using [ffmpeg](https://ffmpeg.org/) tool for any videos conversion, hence for it to work the tool must be installed on your machine.
