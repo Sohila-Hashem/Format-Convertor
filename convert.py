@@ -12,7 +12,8 @@ def main():
     output_folder = sys.argv[2]
     from_format = sys.argv[3]
     to_format = sys.argv[4]
-    action_after_end = sys.argv[5]
+    action_after_end = False
+    if (len(sys.argv) > 5): action_after_end = sys.argv[5]
 
     # utils
     def replace_file(from_path, to_path, file_to_move):
