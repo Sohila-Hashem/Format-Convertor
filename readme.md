@@ -16,8 +16,12 @@ the script is using [ffmpeg](https://ffmpeg.org/) tool for any videos conversion
 -   jpeg
 -   webp
 
+#  Supported **optional** actions
+-   rn | rename (rename the original files to the converted ones)
+-   mv | move (move the converted files to the source directory)
+
 # Get Started
 ## Clone the repository first
-    git clone https://github.com/Sohila-Hashem/GIF-to-WebM-Convertor
+    git clone https://github.com/Sohila-Hashem/Format-Convertor
 ## Run the code
-    python convert.py sourceDirectory outputDirectory fromFormat toFormat
+    python convert.py sourceDirectory outputDirectory fromFormat toFormat [optionalActionAfterParam]
