@@ -17,8 +17,8 @@ the script is using [ffmpeg](https://ffmpeg.org/) tool for any videos conversion
 -   webp
 
 #  Supported **optional** actions
--   rn | rename (rename the original files to the converted ones)
--   mv | move (move the converted files to the source directory)
+-   rn | rename -> rename the original files to the converted ones
+-   mv | move -> move the converted files to the source directory
 
 # Get Started
 ## Clone the repository first
