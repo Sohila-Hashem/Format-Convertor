@@ -16,7 +16,7 @@ def main():
     if (len(sys.argv) > 5): action_after_end = sys.argv[5]
 
     # utils
-    def replace_file(from_path, to_path, file_to_move):
+    def rename_file(from_path, to_path, file_to_move):
             try:
                 os.rename(f'{from_path}/{file_to_move}.{from_format}', f'{from_path}/{file_to_move}.{to_format}')
             except Exception as e:
@@ -29,9 +29,9 @@ def main():
                 print(e)
 
     supported_actions = {
-        "replace": replace_file,
+        "rename": rename_file,
         "copy": copy_file, 
-        "rp": replace_file, 
+        "rn": renamw_file, 
         "cp": copy_file
     }
 
